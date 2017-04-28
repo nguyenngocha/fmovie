@@ -1,6 +1,7 @@
 package framgiavn.project01.web.model;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class User implements Serializable {
 
@@ -9,28 +10,31 @@ public class User implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private int user_id;
-	private String username;
-	private String password;
+	private int id;
+	private String name;
 	private String email;
+	private String password;
+	private int gender;
+	private Date birthday;
+	private String address;
+	private String phoneNumber;
 	private String avatar;
+	private int roles;
 
-	private boolean isAdmin;
-
-	public int getUser_id() {
-		return user_id;
+	public int getId() {
+		return id;
 	}
 
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+	public void setId(int id) {
+		this.id = id;
 	}
 
-	public String getUsername() {
-		return username;
+	public String getName() {
+		return name;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getPassword() {
@@ -41,12 +45,36 @@ public class User implements Serializable {
 		this.password = password;
 	}
 
-	public String getEmail() {
-		return email;
+	public Date getBirthday() {
+		return birthday;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
+	public int getGender() {
+		return gender;
+	}
+
+	public void setGender(int gender) {
+		this.gender = gender;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
 	public String getAvatar() {
@@ -57,11 +85,19 @@ public class User implements Serializable {
 		this.avatar = avatar;
 	}
 
-	public boolean getIsAdmin() {
-		return isAdmin;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setIsAdmin(boolean isAdmin) {
-		this.isAdmin = isAdmin;
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public int getRoles() {
+		return roles;
+	}
+
+	public void setRoles(int roles) {
+		this.roles = roles;
 	}
 }
