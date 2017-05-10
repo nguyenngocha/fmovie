@@ -1,6 +1,7 @@
 package framgiavn.project01.web.model;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 public class User implements Serializable {
 
@@ -15,6 +16,11 @@ public class User implements Serializable {
 	private String email;
 	private String avatar;
 
+	private boolean gender;
+	private Date birthday;
+	private String address;
+	private String phoneNumber;
+	
 	private boolean isAdmin;
 
 	public int getUser_id() {
@@ -63,5 +69,37 @@ public class User implements Serializable {
 
 	public void setIsAdmin(boolean isAdmin) {
 		this.isAdmin = isAdmin;
+	}
+
+	public boolean isGender() {
+		return gender;
+	}
+
+	public void setGender(boolean gender) {
+		this.gender = gender;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 }
